@@ -104,6 +104,7 @@ ul{
 
 .subcontainer3 {
     position: absolute;
+    
 }
 
 .boxlocation {
@@ -118,12 +119,15 @@ ul{
 
 .contact {
     height:200px;
+    opacity: 1;
 }
 
 .copyright {
     text-align: left;
     margin: 20px;
+    opacity: 1;
 }
+
 
 
 

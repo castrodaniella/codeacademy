@@ -75,3 +75,25 @@ body {
     
     font-weight: 700;
 }
+
+
+.heading, .subheading {
+    font-size: 26px;
+}
+
+h1 .heading {
+    font-weight: 700;
+}
+
+h2 .subheading  {
+    font-weight: 500;
+}
+
+.paragraph {
+    font-size: 14px;
+}
+
+.paragraph p {
+    font-weight: 300;
+}
+
