@@ -1,0 +1,14 @@
+h1 {
+    background-color: papayawhip;
+    font-family: cursive;
+
+}
+
+h2 {
+    color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+table, th, td {
+    border: 1px solid;
+}

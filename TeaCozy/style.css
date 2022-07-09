@@ -1,0 +1,129 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Helvetica;
+    font-size: 22px;
+    opacity: 0.9;
+    text-align: center;
+}
+
+
+.logo {
+    height: 50px;
+      
+}
+
+ul{
+    text-align: right;
+}
+
+.container .breadcrumb > li {
+    display: inline;
+    text-decoration: underline;
+   
+}
+
+.container .breadcrumb li+li::before{
+    padding: 10px;
+    content: " ";
+    
+}
+
+.header {
+    height: 69px;
+    display: inline;
+    text-align: left!important ;
+    
+}
+
+
+.container {
+    border-bottom: 1px solid seashell;
+}
+
+.mission {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.headline {
+    background-color: black;
+    position: absolute;
+    color: white;
+    width: 1200px;
+    
+}
+
+.box {
+    display: inline-block;
+}
+
+.teaofmonth  {
+    display: inline-block;
+    width: 1000px;
+
+}
+
+
+
+.box img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+
+}
+
+
+.location img {
+    width: 1200px;
+    height: 500px;
+    
+}
+
+.location {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.subcontainer3 {
+    position: absolute;
+}
+
+.boxlocation {
+    display: inline-block;
+    background-color: black;
+    width: 300px;
+    margin-inline: 40px;
+    margin-top: 15px;
+
+    
+}
+
+.contact {
+    height:200px;
+}
+
+.copyright {
+    text-align: left;
+    margin: 20px;
+}
+
+
+
