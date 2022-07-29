@@ -3,8 +3,6 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  
-
 }
 
 .main-content {
@@ -20,10 +18,6 @@ html {
   border-radius: 4px;
   background-color: #4a4a4a;
   color: white;
-  font-size: 1.25rem;
-  font-family: Robot;
-  font-weight: 500;
-  padding: 26px 80px 56px;
 }
 
 .image-container {
@@ -32,24 +26,25 @@ html {
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
 
-/*
-@media only screen and (max-width: 760px) {
+/* Responsive for tablet */
+@media only screen and (max-width: 1024px) {
   .main-content {
     top: 2.5625rem;
   }
+
 }
 
 /* Header */
 
 header {
   position: fixed;
+  z-index: 100;
   width: 100%;
+  border-bottom: solid 1px #c6c1c1;
   background-color: white;
-  height: 85px;
-  
-
 }
 
 header .content {
@@ -58,36 +53,34 @@ header .content {
   padding: 1.875rem;
 }
 
-header a {
-  text-decoration: none;
-}
-
 header .logo {
   flex: 1;
-  color: #4a4a4a;
-  font-size: 1.5rem;
-  font-family: "Roboto Mono";
-  margin-left: 30px;
 }
 
-header nav ul > li {
-  display: inline;
+header nav ul{
+  display: flex;
 }
-
 
 nav li {
   padding-left: 3.5rem;
-
 }
 
 nav a {
   vertical-align: bottom;
   line-height: 1.6;
+  font-size: 1rem;
   color: #4a4a4a;
-  font-family: Roboto;
+}
+
+nav .button {
+  padding: .1875rem .5rem;
+  background-color: #9dc20b;
   line-height: 1.6;
-  margin-right: 30px;
-  
+  color: white;
+}
+
+nav li:last-child {
+  display: none;
 }
 
 header .icon {
@@ -98,12 +91,24 @@ header .icon {
 header .mobile {
   display: none;
 }
-/*
-@media only screen and (max-width: 760px) {
+
+
+@media only screen and (max-width: 1024px) {
+  nav li:last-child {
+    display: block;
+  }
+
+  header .content {
+    padding: 1rem 1rem;
+  }
+}
+
+/* Responsive for tablet */
+@media only screen and (max-width: 600px) {
   header .desktop {
     display: none;
   }
-
+  
   header .mobile {
     display: block;
     width: 100%;
@@ -123,21 +128,20 @@ header .mobile {
   header .mobile li {
     padding: 0;
   }
-
-  header .mobile .button {
-    padding: .1875rem .5rem;
-    background-color: #9dc20b;
-    line-height: 1.6;
-    color: white;
-  }
 }
+
 
 /* Sign Up Section */
 
 #sign-up-section {
   display: flex;
-  /*justify-content: center;*/
-
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 43.5rem;
+  background-image: url('../images/banner-landingpage.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 img {
@@ -147,17 +151,14 @@ img {
 
 
 #sign-up-cta {
+  position: relative;
+  top: 17px;
+  left: 10%;
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
-  position: absolute;
-  left: 100px;
-  top: 170px;
-  
-
 }
-
 
 
 #sign-up-cta .content {
@@ -175,7 +176,6 @@ img {
   margin-bottom: 12px;
   font-family: Rubik;
   line-height: 1.4;
-  font-weight: ;
 }
 
 #sign-up-cta h2 {
@@ -208,8 +208,9 @@ img {
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
 }
-/*
-@media only screen and (max-width: 760px) {
+
+
+@media only screen and (max-width: 1024px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
@@ -241,7 +242,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 600px) {
   #sign-up-section {
     height: 20rem;
   }
@@ -261,33 +262,31 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 4rem 5%;
-  background-color: white;
-  margin-top: 64px;
-  margin-bottom: 46px;
-  height: 635%;
+  background-color: #f3f3f3;
 }
 
 .feature {
   flex: 1;
   padding: 2rem;
   margin: 0px 1.25rem;
-  background-color: #f3f3f3; 
+  background-color: white; 
 }
 
 .feature .image-container {
   width: 90%;
   height: 65%;
-  margin: 32px 32px 40px;
+  margin: 0 auto
 }
 
-
+.feature .content {
+  padding: 2.5rem 0;
+}
 
 .feature h2 {
   padding-bottom: .5rem;
   font-size: 2.25rem;
   font-weight: bold;
   color: #4a4a4a;
-  line-height: 1.2;
 }
 
 .feature h3 {
@@ -297,20 +296,19 @@ img {
   color: #4a4a4a;
 }
 
-.feature .content {
-  color:#4a4a4a;
-  font-size: 1rem;
-  font-family: Roboto;
-  font-weight: lighter;
-  line-height: 1.2;
-}
-/*
+@media only screen and (max-width: 1024px) {
+  #features-section {
+    padding: 1rem;
+  }
 
-@media only screen and (max-width: 890px) {
+  .feature {
+    margin: 0px .5rem;
+    padding: 1rem;
+  }
+
   .feature h2 {
-    font-size: 1.125rem;
+    font-size: 2rem;
     line-height: 1.3;
-    font-weight: normal;
   }
 
   .feature h3 {
@@ -319,7 +317,7 @@ img {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 600px) {
   #features-section {
     flex-flow: column;
     padding: 0;
@@ -329,6 +327,11 @@ img {
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
   }
+
+  .feature .content {
+    padding: 1.25rem 0 1.875rem 0;
+  }
+
 }
 
 /* Filters Section */
@@ -347,7 +350,6 @@ img {
   font-size: 2.25rem;
   font-weight: bold;
   color: white;
-  opacity: 100%;
 }
 
 #filters-section .content h3 {
@@ -360,15 +362,10 @@ img {
 #filters-section .images-container {
   display: flex;
   max-width: 100%;
-  max-height: 100%;
   padding: 0 1%;
-  margin: 80px 1% 64px;
-
 }
 
-
-/*
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 600px) {
   #filters-section {
     padding: 1.5rem 0 0 0;
   }
@@ -402,12 +399,13 @@ img {
 
 #quotes-section {
   background-color: #f3f3f3;
-  padding-top: 80px;
-  padding-bottom: 80px;
 }
 
 #quotes-section content {
-  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1.5rem;
 }
 
 #quotes-section .quote {
@@ -420,21 +418,28 @@ img {
  
 }
 
-#quotes-section quote-citation {
+#quotes-section .quote-citation {
   height: 1.875rem;
 }
-/*
-@media only screen and (max-width: 760px) {
+
+@media only screen and (max-width: 1024px) {
   #quotes-section content {
+    padding: 3rem  1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #quotes-section .content {
+    flex-flow: column;
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
     margin: auto;
@@ -445,7 +450,7 @@ img {
 
 footer {
   background-color: #9b9b9b;
-  padding: 62px 32px;
+  padding: 1.5rem 2rem;
   
 }
 
@@ -458,10 +463,9 @@ footer .content {
 footer .copyright {
   flex-grow: 1;
 }
-/*
-@media only screen and (min-width: 760px) {
+
+@media only screen and (min-width: 600px) {
   footer .content {
     font-size: .625rem;
   }
 }
-*/
